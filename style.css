@@ -1,29 +1,84 @@
 body{
     display: flex;
     flex-direction: column;
+    font-family: "Roboto";
+    margin:0;
+    
+    
 }
 
 .header{
     display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
+.left-header{
+    font-size: 24px;
+    margin-right: auto;
+    
+    
+}
+.right-header li{
+    padding:10px;
 }
 
 .header ul li{
     display: inline;
 }
 
-.section-1,.section-2,.section-3,.section-4{
+.section-1,.section-2,.section-3,.section-4,.footer{
     display:flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    
 }
+
+.section-1{
+    background-color: #1F2937;
+    display:flex;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    
+}
+
 .section-1-left{
     display: flex;
     flex-direction: column;
+    flex:1;
+    max-width: 400px;
 }   
+
+.section-1-left button{
+    background-color: blue;
+    border-radius: 5px;
+    max-width: 100px;
+    flex-shrink: 0;
+    
+    
+}
+
+.section-1-right{
+    display: flex;
+    flex:1;
+    margin-left:50px;
+    background-color: grey;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;  
+}
 
 
 
 .section-2{
     flex-direction: column;
+    margin: 50px;
+    flex: 1;
 }
 
 .section-2 h2{
@@ -35,18 +90,95 @@ body{
 .section-2 .image-grid{
     display: flex;
     justify-content: center;
+    gap: 20px
+}
+
+.blue-boxes{
+    border:1px;
+    border-color:blue;
+    border-style: solid;
+    width: 120px;
+    height: 120px;
+    flex-shrink:0;
+    border-radius: 5px;
+
+}
+
+.box-text-element{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-text-element p{
+    max-width: 120px;
+    text-align-last: center;
+    font-size: 13px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+}
+
+.item p{
+    color: red;
+    
 }
 
 .section-3{
     display:flex;
     flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.quote{
+    font-style: italic;
+    font-size: 20px;
+    
+
+}
+
+.author{
+    display:flex;
+    margin-left:auto;
 }
 
 .section-4{
-    display:flex
+    display:flex;
+    margin: 50px;
 
+}
+
+.action-box{
+    background-color: blue;
+    padding: 15px 60px 15px 60px;
+    color:white;
 }
 
 .footer{
     display:flex;
+    background-color: #1F2937;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.action-box{
+    display:flex;
+    flex:1;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.action-box .right-side{
+    margin-left: auto;
+}
+
+.action-box .right-side button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
 }
